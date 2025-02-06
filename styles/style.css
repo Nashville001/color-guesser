@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+.game_container {
+  padding: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  font-size: 2rem;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 auto;
+}
+.btn {
+  background: greenyellow;
+  color: #222;
+  padding: 1.5rem;
+  border-radius: 20px;
+  font-family: "Press Start 2P", sans-serif;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  width: 50%;
+}
+.right {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.box {
+  padding: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20px;
+}
+.hint {
+  display: none;
+}
+.score {
+  color: #eee;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 0.75rem;
+}
+#colorHintBox {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 2px solid black;
+  opacity: 1; /* Starts fully visible */
+  transition: opacity 1s ease-out; /* Smooth fade-out effect */
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 0.5rem;
+  }
+  .btn {
+    padding: 0.25rem;
+  }
+  .left {
+    gap: 0.5rem;
+    padding: 0.25rem;
+  }
+  .right {
+    padding: 0.25rem;
+    gap: 0.5rem;
+  }
+  .box {
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .hint {
+    display: none;
+  }
+  #colorHintBox {
+    width: 2rem;
+    height: 2rem;
+  }
+  .score {
+    font-size: 0.5rem;
+  }
+}
